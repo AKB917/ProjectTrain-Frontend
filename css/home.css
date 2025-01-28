@@ -1,0 +1,35 @@
+#header {
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 2vw;
+}
+
+#topRightButtons {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  background-color: aqua;
+}
+
+#logo {
+  font-size: 20px;
+}
+
+#main {
+  height: 90vh;
+  width: 100vw;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
