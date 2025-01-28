@@ -16,6 +16,41 @@
         <h3>Bookings</h3>
       </div>
     </div>
-    <div id="main"></div>
+    <div id="main">
+      <h1 id="CatchSentence">Explore the world effortlessly by train!</h1>
+      <h4 id="description">
+        Compare, book and enjoy cheap prices for train tickets: your journey
+        starts on Tickethack.
+      </h4>
+      <div id="boxContainer">
+        <div class="whitebox">
+          <input class="greyInput" placeholder="Departure" />
+          <div id="greySeparator"></div>
+          <input class="greyInput" placeholder="Arrival" />
+          <input
+            type="date"
+            id="date"
+            name="date"
+            class="greyInput"
+            placeholder="Select Date"
+          />
+          <button id="searchButton">Search</button>
+        </div>
+
+        <!-- <div class="whitebox" id="default">
+          <img class="rightIcon" src="./images/train.png" />
+          <div id="greenSeparator"></div>
+          <h5>It's time to book your future trip.</h5>
+        </div>
+        <div class="whitebox" id="noResult">
+          <img class="rightIcon" src="./images/notfound.png" />
+          <div id="greenSeparator"></div>
+          <h5>No trip found.</h5>
+        </div> -->
+        <div class="whitebox" id="results">
+          <div class="oneResult"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
