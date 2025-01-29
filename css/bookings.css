@@ -5,14 +5,13 @@
   align-items: center;
   margin: 0px 2vw;
 }
-x #topRightButtons {
+#topRightButtons {
   display: flex;
   flex-direction: row;
   font-size: 15px;
-  background-color: green;
 }
 
-#topRightButtons > h3 {
+#topRightButtons > a {
   margin: 0vw 1vw;
 }
 
