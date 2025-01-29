@@ -1,9 +1,11 @@
 const searchTrips = () => {
-  const departureEntered = document.querySelector("#departure").value;
+  const departureEntered =
+    document.querySelector("#departure").value || "Paris";
 
-  const arrivalEntered = document.querySelector("#arrival").value;
+  const arrivalEntered =
+    document.querySelector("#arrival").value || "Marseille";
 
-  const dateEntered = document.querySelector("#date").value;
+  const dateEntered = document.querySelector("#date").value || "2025-01-31";
 
   const url = `http://localhost:3000/home/trips?departure=${departureEntered}&arrival=${arrivalEntered}&date=${dateEntered}`;
   fetch(url, {
@@ -29,9 +31,10 @@ const searchTrips = () => {
             <p>${oneTrip.departure} > ${oneTrip.arrival}</p>
             <p>${oneTrip.time}</p>
             <p>${oneTrip.price}€</p>
-            <button class="bookButton" id=${oneTrip.id}>Book</button>
+            <button class="bookButton" id=${oneTrip._id}>Book</button>
           </div>`;
         }
+        addListenerBooking();
       }
     });
 };
@@ -40,3 +43,17 @@ document.querySelector("#searchButton").addEventListener("click", () => {
   console.log("Button clicked");
   searchTrips();
 });
+
+const addListenerBooking = () => {
+  console.log("begin scan");
+  document.querySelectorAll(".bookButton").forEach((button) => {
+    button.addEventListener("click", () => {
+      console.log("click, button.id = ", button.id);
+      fetch(`http://localhost:3000/carts/add/${button.id}`, { method: "POST" })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Sucess BOOKING, data = ", data);
+        });
+    });
+  });
+};
