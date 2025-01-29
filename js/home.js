@@ -49,6 +49,7 @@ const addListenerBooking = () => {
   document.querySelectorAll(".bookButton").forEach((button) => {
     button.addEventListener("click", () => {
       console.log("click, button.id = ", button.id);
+      window.location.href = "cart.html";
       fetch(`http://localhost:3000/carts/add/${button.id}`, { method: "POST" })
         .then((response) => response.json())
         .then((data) => {

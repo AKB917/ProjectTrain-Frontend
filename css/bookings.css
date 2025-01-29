@@ -35,9 +35,11 @@ x #topRightButtons {
   background-color: white;
   border-radius: 10px;
   width: 60vw;
+  max-height: 70%;
   padding: 5vh 0vw 0vh 0vw;
   align-items: center;
   justify-content: center;
+  overflow-y: scroll;
 }
 
 #myCart {
@@ -53,7 +55,7 @@ x #topRightButtons {
   width: 70%;
   border-radius: 10px;
   padding: 0vh 1vw;
-  margin: 3vh 0vw;
+  margin: 2vh 0vw;
 }
 
 #blueBar {
@@ -94,4 +96,32 @@ x #topRightButtons {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#insideWhiteBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+#separator {
+  background-color: #000000;
+  width: 15%;
+  height: 1px;
+  margin: 3vh 0vw;
+}
+
+#whiteBoxFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100%;
+  width: 100%;
+  color: #4fa790;
+  font-size: 15px;
+  font-weight: 100;
 }
