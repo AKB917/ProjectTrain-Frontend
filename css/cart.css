@@ -1,0 +1,42 @@
+#header {
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 2vw;
+}
+x #topRightButtons {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  background-color: green;
+}
+
+#topRightButtons > h3 {
+  margin: 0vw 1vw;
+}
+
+#logo {
+  font-size: 15px;
+  color: #4fa790;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f3f3;
+  height: 93vh;
+}
+
+.whiteRectangle {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  border-top: 2px;
+  width: 60vw;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+}

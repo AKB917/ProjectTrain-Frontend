@@ -12,8 +12,9 @@
   font-size: 15px;
 }
 
-#topRightButtons > h3 {
+#topRightButtons > a {
   margin: 0vw 1vw;
+  color: black;
 }
 
 #logo {
@@ -25,7 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
+  height: 97vh;
   width: 100vw;
   background-image: url("../images/background.jpg");
   background-size: cover;
