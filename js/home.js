@@ -1,11 +1,9 @@
 const searchTrips = () => {
-  const departureEntered =
-    document.querySelector("#departure").value || "Paris";
+  const departureEntered = document.querySelector("#departure").value;
 
-  const arrivalEntered =
-    document.querySelector("#arrival").value || "Marseille";
+  const arrivalEntered = document.querySelector("#arrival").value;
 
-  const dateEntered = document.querySelector("#date").value || "2025-01-31";
+  const dateEntered = document.querySelector("#date").value;
 
   const url = `http://localhost:3000/home/trips?departure=${departureEntered}&arrival=${arrivalEntered}&date=${dateEntered}`;
   fetch(url, {
